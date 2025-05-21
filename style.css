@@ -56,6 +56,7 @@ html {
     background-image: url(./main/Section.svg);
     background-size: cover;
     width:100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap:10rem
@@ -219,6 +220,7 @@ header .hero-head > .first-hero {
 .first-hero .objective > p {
   font-size: var(--pri-head);
   color:var(--color-main);
+  text-align: center;
 }
 
 .first-hero .objective > .apply-btn {
@@ -272,6 +274,9 @@ header .hero-head > .first-hero {
 main #about {
     background-color: var(--color-back);
     padding: 7rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap:7rem;
 }
 
 main #about > .grid-box {
@@ -289,6 +294,7 @@ main #about > .grid-box {
 
 .grid-box .one img:first-child {
     width: 100%;
+    height: auto;
 }
 
 .grid-box .one > img:nth-child(2) {
@@ -296,13 +302,15 @@ main #about > .grid-box {
     left:3%;
     top:1rem;
     width: 5rem;
+    height: auto;
 }
 
 .grid-box .one > img:nth-child(3) {
     position: absolute;
-    left:17%;
+    left:12%;
     top:1rem;
     width: 5rem;
+    height: auto;
 }
 
 
@@ -341,6 +349,7 @@ main #about > .grid-box {
 
 .grid-box .three img:first-child {
     width: 100%;
+    height: auto;
 }
 
 .grid-box .three > .rating {
@@ -359,6 +368,7 @@ main #about > .grid-box {
 
 .rating .image-rate > img {
     width: 50%;
+    height: auto;
 }
 
 .rating .text-rate > h4 {
@@ -422,6 +432,26 @@ main #about > .grid-box {
     background-color: var(--color-ash);
     width: 75%;
     height: 0.1rem;
+}
+
+#about .ipsum-logo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:7rem;
+}
+
+#about .ipsum-logo > img {
+    width: 10rem;
+    height: auto;
+}
+
+#about .ipsum-logo > img:nth-child(3) {
+    width: 7rem;
+}
+
+#about .ipsum-logo > img:nth-child(4) {
+    width: 7rem;
 }
 
 
@@ -491,13 +521,13 @@ main #about > .grid-box {
     }
 
     .hero-head .first-hero > h2 {
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 4rem;
+        line-height: 4rem;
     }
 
     .first-hero .objective > p {
        text-align: center;
-       font-size: 2rem;
+       font-size: 1.5rem;
     }
 
     header .hero-head {
@@ -513,24 +543,31 @@ main #about > .grid-box {
     }
 
     .hero-head .text-slider > h1 {
-      font-size: 6rem;
+      font-size: 5rem;
     }
 
     main #about {
-    background-color: var(--color-back);
-    padding: 3rem 2rem;
+      background-color: var(--color-back);
+      padding: 3rem 2rem;
     }
 
     main #about > .grid-box {
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: auto auto auto auto;
-    gap:7rem;
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: auto auto auto auto;
+      gap:7rem;
     }
 
     #about .grid-box > .four {
-    grid-row-start: 4;
+      grid-row-start: 4;
     }
+
+    #about .ipsum-logo {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:5rem
+    }
+
 }
 
   /* Phone breakpoint */
@@ -607,13 +644,13 @@ main #about > .grid-box {
     }
 
     .hero-head .first-hero > h2 {
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 3rem;
+        line-height: 3rem;
     }
 
     .first-hero .objective > p {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     header .hero-head > .first-hero {
@@ -624,12 +661,16 @@ main #about > .grid-box {
        justify-content: center;
     }
 
+    .first-hero .objective > .apply-btn {
+       padding: 0.8rem 3rem;
+    }
+
     header .hero-head {
-       gap:3rem;
+       gap:2rem;
     }
 
     .hero-head .text-slider > h1 {
-       font-size: 6rem;
+       font-size: 4rem;
     }
 
     main #about {
