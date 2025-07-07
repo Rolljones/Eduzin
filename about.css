@@ -59,7 +59,6 @@ button {
   background-image: url(./About/Hero\ Thumbnail.svg);
   background-size: cover;
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   gap: 15rem;
@@ -489,7 +488,7 @@ main #team {
   }
 
   .container header {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 8rem;
     gap: 5rem;
   }
 
@@ -638,8 +637,8 @@ main #team {
   }
 
   .container header {
-    padding: 3rem 2rem 3rem;
-    gap: 3rem;
+    padding: 3rem 2rem 8rem;
+    gap: 4rem;
   }
 
   header nav {
@@ -715,12 +714,14 @@ main #team {
   }
 
   .hero-head .first-hero > h2 {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: center;
   }
 
   .hero-head .first-hero > p {
     font-size: 1rem;
+    text-align: center;
   }
 
   header .hero-head {
