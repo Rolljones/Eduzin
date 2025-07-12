@@ -691,8 +691,20 @@ footer .last-foot > .social-icon {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 7rem;
+    gap: 5rem;
   }
+
+  
+  #details .first-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+#details .first-image > img:first-child {
+  display: none;
+}
 
   #details .content {
     display: flex;
