@@ -1388,6 +1388,10 @@ footer .last-foot > .social-icon {
     grid-row-start: 4;
   }
 
+  .grid-box .three > .rating {
+    display: none;
+  }
+
   #about .ipsum-logo {
     flex-wrap: wrap;
     justify-content: center;
@@ -1692,6 +1696,10 @@ footer .last-foot > .social-icon {
 
   #about .grid-box > .four {
     grid-row-start: 4;
+  }
+
+  .grid-box .three > .rating {
+    display: none;
   }
 
   main #area {
