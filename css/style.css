@@ -56,7 +56,7 @@ button {
 
 .container header {
   padding: 3rem 5rem;
-  background-image: url(./main/Section.svg);
+  background-image: url(../main/Section.webp);
   background-size: cover;
   width: 100%;
   height: auto;
@@ -540,6 +540,8 @@ main #area {
 
 .career-flex div > img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .career-flex div > .career-info {
@@ -1140,7 +1142,7 @@ footer {
   gap: 1rem;
   padding: 7rem 5rem 3rem;
   background-color: var(--color-main);
-  background-image: url(./main/Shape\ Footer.svg);
+  background-image: url(../main/Shape\ Footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -56,10 +56,11 @@ button {
 
 .container header {
   padding: 3rem 5rem;
-  background-image: url(./teach/full-shot-adults-walking-together-outside\ 1.svg);
+  background-image: url(../About/Hero\ Thumbnail.svg);
   background-size: cover;
   width: 100%;
   display: flex;
+  background-position: center;
   flex-direction: column;
   gap: 15rem;
   position: relative;
@@ -230,149 +231,100 @@ header .hero-head > .first-hero {
   font-weight: 600;
 }
 
-main #team {
-  background-color: var(--color-main);
+main #contact-flex {
+  display: flex;
+  gap: 5rem;
   padding: 7rem 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
-#team .team-flex {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 5rem 3rem;
+#contact-flex .left-area {
+  width: 45%;
 }
 
-.team-flex .all-team {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.team-flex .all-team > .img-wrapper {
-  overflow: hidden;
-}
-
-.img-wrapper img {
+.left-area img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
 }
 
-.all-team .team-text > h3 {
-  font-size: var(--sec-text);
-}
-
-.all-team .team-text > p {
-  font-size: var(--ano-text);
-  color: #616161;
-}
-
-.all-team:hover img {
-  transform: scale(1.1);
-}
-
-.all-team:hover .team-text > h3 {
-  color: var(--color-back);
-}
-
-main #expect {
-  padding: 7rem 5rem;
-  background-color: var(--color-back);
-}
-
-#expect .expect-flex {
-  display: flex;
-  justify-content: space-between;
-  gap: 6rem;
-}
-
-.expect-flex img {
-  width: 50%;
-  height: auto;
-}
-
-.expect-flex .expect-info {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.expect-info .expect-head {
+#contact-flex .right-area {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.expect-head > .expectation {
-  border: 2px solid var(--color-main);
+.right-area .area {
+  border: 2px solid var(--color-dark);
   border-radius: 2rem;
   text-transform: uppercase;
-  color: var(--color-main);
+  color: var(--color-dark);
   padding: 1rem 2rem;
   width: fit-content;
   font-size: var(--pri-text);
   font-weight: 500;
 }
 
-.expect-head > h2 {
+.right-area h2 {
   font-size: var(--pri-head);
-  color: var(--color-main);
-  line-height: 3rem;
+  color: var(--color-dark);
 }
 
-.expect-info > .grid-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3rem 3rem 3rem;
-  gap: 2rem 3rem;
-}
-
-.grid-box .digit {
+.right-area .information {
   display: flex;
+  flex-direction: column;
+}
+
+.right-area .information > .contact-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+  border-bottom: 1.5px solid #c1bfbf;
+  padding: 1.8rem 0;
+  transition: all 0.5s ease;
+}
+
+.right-area .information > .contact-box:hover {
+  border-bottom: 1.5px solid #000000;
+}
+
+.contact-box .contact-text {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-  align-items: center;
 }
 
-.digit i {
-  color: var(--color-back);
-  font-size: 1.5rem;
-  background-color: #c1ff94;
-  border-radius: 50%;
-  padding: 0.4rem;
-  transition: all 0.5s ease;
+.contact-text h3 {
+  font-size: var(--sec-text);
 }
 
-.digit p {
-  font-size: var(--pri-text);
-  color: var(--color-main);
-}
-
-.expect-info .sub-btn {
-  font-size: var(--pri-text);
-  text-transform: uppercase;
-  color: var(--color-back);
-  padding: 1rem 3rem;
-  font-weight: 600;
-  border: none;
+.contact-text .info {
   display: flex;
-  border-radius: 2rem;
-  align-items: center;
+  gap: 2rem;
+}
+
+.info a {
+  font-size: var(--pri-text);
+  color: #616161;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contact-box .hyper-icon > i {
+  color: var(--color-dark);
+  font-size: 3rem;
+  padding: 0.2rem;
+  border: 1.5px solid var(--hover-hyper);
+  border-radius: 50%;
   transition: all 0.5s ease;
-  width: fit-content;
 }
 
-.expect-info .sub-btn:hover {
-  border: 2px solid var(--color-main);
+.contact-box .hyper-icon > i:hover {
   color: var(--color-main);
-  background: transparent;
+  background-color: var(--hover-hyper);
 }
 
-.sub-btn i {
-  font-size: 2rem;
+.container .linee-through {
+  border-bottom: 1.5px solid #c1bfbf;
+  margin: 0 5rem;
 }
 
 footer {
@@ -381,7 +333,7 @@ footer {
   gap: 1rem;
   padding: 7rem 5rem 3rem;
   background-color: var(--color-main);
-  background-image: url(./main/Shape\ Footer.svg);
+  background-image: url(../main/Shape\ Footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -532,7 +484,6 @@ footer .last-foot > .social-icon {
   .container header {
     padding: 3rem 2rem 8rem;
     gap: 5rem;
-    background-position: center;
   }
 
   nav .nav-links {
@@ -608,35 +559,19 @@ footer .last-foot > .social-icon {
     gap: 3rem;
   }
 
-  main #team {
-    background-color: var(--color-main);
-    padding: 3rem 2rem;
+  main #contact-flex {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  #team .team-flex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    gap: 5rem 3rem;
-  }
-
-  main #expect {
+    gap: 5rem;
+    flex-direction: column-reverse;
     padding: 3rem 2rem;
-    background-color: var(--color-back);
   }
 
-  #expect .expect-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-  }
-
-  .expect-flex img {
+  #contact-flex .left-area {
     width: 100%;
-    height: auto;
+  }
+
+  .container .linee-through {
+    display: none;
   }
 
   footer {
@@ -684,7 +619,6 @@ footer .last-foot > .social-icon {
   .container header {
     padding: 3rem 2rem 8rem;
     gap: 4rem;
-    background-position: center;
   }
 
   header nav {
@@ -774,35 +708,25 @@ footer .last-foot > .social-icon {
     gap: 2rem;
   }
 
-  main #team {
-    background-color: var(--color-main);
-    padding: 3rem 2rem;
+  main #contact-flex {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  #team .team-flex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    gap: 5rem 3rem;
-  }
-
-  main #expect {
+    gap: 5rem;
+    flex-direction: column-reverse;
     padding: 3rem 2rem;
-    background-color: var(--color-back);
   }
 
-  #expect .expect-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-  }
-
-  .expect-flex img {
+  #contact-flex .left-area {
     width: 100%;
-    height: auto;
+  }
+
+  .contact-text .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .container .linee-through {
+    display: none;
   }
 
   footer {

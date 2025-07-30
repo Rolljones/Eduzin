@@ -56,7 +56,7 @@ button {
 
 .container header {
   padding: 3rem 5rem;
-  background-image: url(./About/Hero\ Thumbnail.svg);
+  background-image: url(../About/Hero\ Thumbnail.svg);
   background-size: cover;
   width: 100%;
   display: flex;
@@ -331,7 +331,7 @@ footer {
   gap: 1rem;
   padding: 7rem 5rem 3rem;
   background-color: var(--color-main);
-  background-image: url(./main/Shape\ Footer.svg);
+  background-image: url(../main/Shape\ Footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }

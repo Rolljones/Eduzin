@@ -56,11 +56,10 @@ button {
 
 .container header {
   padding: 3rem 5rem;
-  background-image: url(./event/mall-america-scenes-cinematic-style\ 1.svg);
+  background-image: url(../teach/full-shot-adults-walking-together-outside\ 1.svg);
   background-size: cover;
   width: 100%;
   display: flex;
-  background-position: center;
   flex-direction: column;
   gap: 15rem;
   position: relative;
@@ -231,52 +230,149 @@ header .hero-head > .first-hero {
   font-weight: 600;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-  gap: 3rem;
+main #team {
+  background-color: var(--color-main);
   padding: 7rem 5rem;
-}
-
-main #event {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-main #event > img {
-  width: 100%;
+#team .team-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 5rem 3rem;
 }
 
-main #event > h2 {
-  font-size: var(--sec-text);
-  color: var(--color-dark);
-}
-
-#event .time-flex {
+.team-flex .all-team {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 1.5rem;
 }
 
-#event .time-flex > .info {
+.team-flex .all-team > .img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.all-team .team-text > h3 {
+  font-size: var(--sec-text);
+}
+
+.all-team .team-text > p {
+  font-size: var(--ano-text);
+  color: #616161;
+}
+
+.all-team:hover img {
+  transform: scale(1.1);
+}
+
+.all-team:hover .team-text > h3 {
+  color: var(--color-back);
+}
+
+main #expect {
+  padding: 7rem 5rem;
+  background-color: var(--color-back);
+}
+
+#expect .expect-flex {
   display: flex;
   justify-content: space-between;
+  gap: 6rem;
 }
 
-.info h3 {
-  font-size: var(--ano-text);
+.expect-flex img {
+  width: 50%;
+  height: auto;
 }
 
-.info p {
-  color: #616161;
-  font-size: var(--ano-text);
+.expect-flex .expect-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.container .linee-through {
-  border-bottom: 1.5px solid #c1bfbf;
-  margin: 0 5rem;
+.expect-info .expect-head {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.expect-head > .expectation {
+  border: 2px solid var(--color-main);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  color: var(--color-main);
+  padding: 1rem 2rem;
+  width: fit-content;
+  font-size: var(--pri-text);
+  font-weight: 500;
+}
+
+.expect-head > h2 {
+  font-size: var(--pri-head);
+  color: var(--color-main);
+  line-height: 3rem;
+}
+
+.expect-info > .grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3rem 3rem 3rem;
+  gap: 2rem 3rem;
+}
+
+.grid-box .digit {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.digit i {
+  color: var(--color-back);
+  font-size: 1.5rem;
+  background-color: #c1ff94;
+  border-radius: 50%;
+  padding: 0.4rem;
+  transition: all 0.5s ease;
+}
+
+.digit p {
+  font-size: var(--pri-text);
+  color: var(--color-main);
+}
+
+.expect-info .sub-btn {
+  font-size: var(--pri-text);
+  text-transform: uppercase;
+  color: var(--color-back);
+  padding: 1rem 3rem;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  border-radius: 2rem;
+  align-items: center;
+  transition: all 0.5s ease;
+  width: fit-content;
+}
+
+.expect-info .sub-btn:hover {
+  border: 2px solid var(--color-main);
+  color: var(--color-main);
+  background: transparent;
+}
+
+.sub-btn i {
+  font-size: 2rem;
 }
 
 footer {
@@ -285,7 +381,7 @@ footer {
   gap: 1rem;
   padding: 7rem 5rem 3rem;
   background-color: var(--color-main);
-  background-image: url(./main/Shape\ Footer.svg);
+  background-image: url(../main/Shape\ Footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -512,16 +608,35 @@ footer .last-foot > .social-icon {
     gap: 3rem;
   }
 
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
-    gap: 3rem;
+  main #team {
+    background-color: var(--color-main);
     padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
-  .container .linee-through {
-    display: none;
+  #team .team-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 5rem 3rem;
+  }
+
+  main #expect {
+    padding: 3rem 2rem;
+    background-color: var(--color-back);
+  }
+
+  #expect .expect-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .expect-flex img {
+    width: 100%;
+    height: auto;
   }
 
   footer {
@@ -659,16 +774,35 @@ footer .last-foot > .social-icon {
     gap: 2rem;
   }
 
-  main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
-    gap: 3rem;
+  main #team {
+    background-color: var(--color-main);
     padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
-  .container .linee-through {
-    display: none;
+  #team .team-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 5rem 3rem;
+  }
+
+  main #expect {
+    padding: 3rem 2rem;
+    background-color: var(--color-back);
+  }
+
+  #expect .expect-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .expect-flex img {
+    width: 100%;
+    height: auto;
   }
 
   footer {

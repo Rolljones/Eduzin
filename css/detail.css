@@ -56,11 +56,11 @@ button {
 
 .container header {
   padding: 3rem 5rem;
-  background-image: url(./About/Hero\ Thumbnail.svg);
+  background-image: url(../details/hercules.svg);
   background-size: cover;
   width: 100%;
-  display: flex;
   background-position: center;
+  display: flex;
   flex-direction: column;
   gap: 15rem;
   position: relative;
@@ -231,27 +231,38 @@ header .hero-head > .first-hero {
   font-weight: 600;
 }
 
-main #contact-flex {
-  display: flex;
-  gap: 5rem;
+main #details {
   padding: 7rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
 }
 
-#contact-flex .left-area {
-  width: 45%;
+#details .first-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
 }
 
-.left-area img {
+#details .first-image > img {
   width: 100%;
 }
 
-#contact-flex .right-area {
+#details .content {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 4rem;
+  padding: 0 12rem;
 }
 
-.right-area .area {
+.content .head {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content .head > .edu {
   border: 2px solid var(--color-dark);
   border-radius: 2rem;
   text-transform: uppercase;
@@ -262,64 +273,29 @@ main #contact-flex {
   font-weight: 500;
 }
 
-.right-area h2 {
+.content .head > h2 {
   font-size: var(--pri-head);
   color: var(--color-dark);
+  line-height: 3rem;
 }
 
-.right-area .information {
+.content .major {
   display: flex;
   flex-direction: column;
-}
-
-.right-area .information > .contact-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8rem;
-  border-bottom: 1.5px solid #c1bfbf;
-  padding: 1.8rem 0;
-  transition: all 0.5s ease;
-}
-
-.right-area .information > .contact-box:hover {
-  border-bottom: 1.5px solid #000000;
-}
-
-.contact-box .contact-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact-text h3 {
-  font-size: var(--sec-text);
-}
-
-.contact-text .info {
-  display: flex;
   gap: 2rem;
 }
 
-.info a {
-  font-size: var(--pri-text);
+.major .clear {
+  font-size: var(--ano-text);
   color: #616161;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
-.contact-box .hyper-icon > i {
-  color: var(--color-dark);
-  font-size: 3rem;
-  padding: 0.2rem;
-  border: 1.5px solid var(--hover-hyper);
-  border-radius: 50%;
-  transition: all 0.5s ease;
-}
-
-.contact-box .hyper-icon > i:hover {
-  color: var(--color-main);
-  background-color: var(--hover-hyper);
+.major .box {
+  font-size: var(--pri-head);
+  background-color: var(--color-sub);
+  padding: 3rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .container .linee-through {
@@ -333,7 +309,7 @@ footer {
   gap: 1rem;
   padding: 7rem 5rem 3rem;
   background-color: var(--color-main);
-  background-image: url(./main/Shape\ Footer.svg);
+  background-image: url(../main/Shape\ Footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -559,15 +535,18 @@ footer .last-foot > .social-icon {
     gap: 3rem;
   }
 
-  main #contact-flex {
-    display: flex;
-    gap: 5rem;
-    flex-direction: column-reverse;
+  main #details {
     padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
   }
 
-  #contact-flex .left-area {
-    width: 100%;
+  #details .content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0;
   }
 
   .container .linee-through {
@@ -708,21 +687,30 @@ footer .last-foot > .social-icon {
     gap: 2rem;
   }
 
-  main #contact-flex {
-    display: flex;
-    gap: 5rem;
-    flex-direction: column-reverse;
+  main #details {
     padding: 3rem 2rem;
-  }
-
-  #contact-flex .left-area {
-    width: 100%;
-  }
-
-  .contact-text .info {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 5rem;
+  }
+
+  
+  #details .first-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+#details .first-image > img:first-child {
+  display: none;
+}
+
+  #details .content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0;
   }
 
   .container .linee-through {

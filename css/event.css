@@ -56,11 +56,11 @@ button {
 
 .container header {
   padding: 3rem 5rem;
-  background-image: url(./About/Hero\ Thumbnail.svg);
+  background-image: url(../event/mall-america-scenes-cinematic-style\ 1.svg);
   background-size: cover;
   width: 100%;
-  background-position: center;
   display: flex;
+  background-position: center;
   flex-direction: column;
   gap: 15rem;
   position: relative;
@@ -232,52 +232,46 @@ header .hero-head > .first-hero {
 }
 
 main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 3rem;
   padding: 7rem 5rem;
 }
 
-main #grid-blog {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 4rem 2rem;
-}
-
-#grid-blog .grid-box > a {
+main #event {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  text-decoration: none;
+  gap: 1.5rem;
 }
 
-.grid-box a > .wrap {
-  overflow: hidden;
-  background-color: #69cd52;
-}
-
-.grid-box img {
+main #event > img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
 }
 
-.grid-box:hover img {
-  transform: scale(1.2);
-}
-
-.grid-box:hover h3 {
-  color: var(--color-back);
-}
-
-.grid-box p {
-  font-size: var(--pri-text);
-  color: var(--color-back);
-  font-weight: 500;
-}
-
-.grid-box h3 {
-  font-size: 1.3rem;
+main #event > h2 {
+  font-size: var(--sec-text);
   color: var(--color-dark);
+}
+
+#event .time-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+#event .time-flex > .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info h3 {
+  font-size: var(--ano-text);
+}
+
+.info p {
+  color: #616161;
+  font-size: var(--ano-text);
 }
 
 .container .linee-through {
@@ -291,7 +285,7 @@ footer {
   gap: 1rem;
   padding: 7rem 5rem 3rem;
   background-color: var(--color-main);
-  background-image: url(./main/Shape\ Footer.svg);
+  background-image: url(../main/Shape\ Footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -442,6 +436,7 @@ footer .last-foot > .social-icon {
   .container header {
     padding: 3rem 2rem 8rem;
     gap: 5rem;
+    background-position: center;
   }
 
   nav .nav-links {
@@ -518,14 +513,11 @@ footer .last-foot > .social-icon {
   }
 
   main {
-    padding: 3rem 2rem;
-  }
-
-  main #grid-blog {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto;
-    gap: 4rem 2rem;
+    gap: 3rem;
+    padding: 3rem 2rem;
   }
 
   .container .linee-through {
@@ -577,6 +569,7 @@ footer .last-foot > .social-icon {
   .container header {
     padding: 3rem 2rem 8rem;
     gap: 4rem;
+    background-position: center;
   }
 
   header nav {
@@ -667,14 +660,11 @@ footer .last-foot > .social-icon {
   }
 
   main {
-    padding: 3rem 2rem;
-  }
-
-  main #grid-blog {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
-    gap: 4rem 2rem;
+    gap: 3rem;
+    padding: 3rem 2rem;
   }
 
   .container .linee-through {
