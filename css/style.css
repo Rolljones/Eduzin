@@ -617,6 +617,8 @@ main #choose {
 
 .grid-boxs div > img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .grid-boxs div:first-child {
